@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Simple Widget</string>
+    <string name="widget_description">選んだ写真を表示します</string>
+    <string name="widget_empty">タップして写真を選択</string>
+    <string name="widget_image_description">選択した写真</string>
+    <string name="change_photo">写真を変更</string>
+    <string name="no_photo">未設定</string>
+    <string name="no_widgets">ホーム画面にウィジェットを追加すると、ここでウィジェットごとに写真を変更できます</string>
+    <string name="section_widgets">ウィジェット</string>
+    <string name="section_library">写真ライブラリ</string>
+    <string name="add_photos">写真を追加</string>
+    <string name="add_from_photos">Google フォトから追加</string>
+    <string name="importing">取り込み中…</string>
+    <string name="no_photos">写真がありません。追加しておくとウィジェットから選べます</string>
+    <string name="library_hint">タップで削除できます</string>
+    <string name="select_photo_title">ウィジェットに表示する写真を選択</string>
+    <string name="delete_photo_confirm">この写真をライブラリから削除しますか？表示中のウィジェットは未設定に戻ります</string>
+    <string name="delete">削除</string>
+    <string name="cancel">キャンセル</string>
+    <string name="save_failed">画像の読み込みに失敗しました</string>
+</resources>
