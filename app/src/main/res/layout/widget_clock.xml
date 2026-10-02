@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 高さ 1 セルに収まるよう、年と日付を左に縦積み・時刻を右に置く。幅に応じて文字サイズを自動調整する -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/widget_background"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingHorizontal="12dp"
+    android:paddingVertical="6dp">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/clock_year"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:autoSizeMaxTextSize="14sp"
+            android:autoSizeMinTextSize="8sp"
+            android:autoSizeTextType="uniform"
+            android:gravity="center_horizontal|bottom"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:text="@string/clock_year_placeholder"
+            android:textColor="?android:attr/textColorSecondary" />
+
+        <TextClock
+            android:id="@+id/clock_date"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:autoSizeMaxTextSize="18sp"
+            android:autoSizeMinTextSize="8sp"
+            android:autoSizeTextType="uniform"
+            android:format12Hour="M月d日 EEEE"
+            android:format24Hour="M月d日 EEEE"
+            android:gravity="center_horizontal|top"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:textColor="?android:attr/textColorPrimary" />
+    </LinearLayout>
+
+    <!-- 日付との間が空きすぎないよう、時刻は列の左端に寄せる -->
+    <TextClock
+        android:id="@+id/clock_time"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="4dp"
+        android:layout_weight="2"
+        android:autoSizeMaxTextSize="40sp"
+        android:autoSizeMinTextSize="14sp"
+        android:autoSizeTextType="uniform"
+        android:fontFamily="sans-serif-medium"
+        android:format12Hour="h:mm"
+        android:format24Hour="H:mm"
+        android:gravity="start|center_vertical"
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:textColor="?android:attr/textColorPrimary" />
+</LinearLayout>

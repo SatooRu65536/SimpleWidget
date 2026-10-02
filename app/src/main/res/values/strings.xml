@@ -17,5 +17,7 @@
     <string name="delete_photo_confirm">この写真をライブラリから削除しますか？表示中のウィジェットは未設定に戻ります</string>
     <string name="delete">削除</string>
     <string name="cancel">キャンセル</string>
+    <string name="clock_widget_description">時刻と西暦・和暦・日付・曜日を表示します</string>
+    <string name="clock_year_placeholder">2026年（令和8年）</string>
     <string name="save_failed">画像の読み込みに失敗しました</string>
 </resources>
